@@ -11,7 +11,7 @@ class Complex {
             cout<<"b : "<<b<<endl;
         }
 };
-void Complex:: setData(int x, int y) {
+void Complex:: setData(int x, int y) { //Complex - membership label, :: - scope resolution operator
     a = x;
     b = y;
 }
