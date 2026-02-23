@@ -47,7 +47,7 @@ int main() {
     // The result is returned and stored in c3
     c3 = c1.add(c2);
 
-    // Display the result of the addition
+    // Display the result of (c3) the addition
     c3.showData();
     
     return 0;
