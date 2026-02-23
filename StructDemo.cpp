@@ -1,3 +1,7 @@
+//The only difference between structure and class is that:
+//the members of structure are by default public and
+//the members of class are by default private
+
 #include<bits/stdc++.h>
 using namespace std;
 
