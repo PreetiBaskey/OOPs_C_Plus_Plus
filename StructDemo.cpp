@@ -21,7 +21,7 @@ struct Complex {
 
 int main() {
     
-    Complex c1;
+    Complex c1; //here c1 is called as variable of Complex
     c1.setData(10, 20);
     c1.showData();
     
