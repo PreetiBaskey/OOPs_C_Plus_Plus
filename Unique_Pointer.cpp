@@ -7,6 +7,19 @@
   3. No supprt of copy constructor and copy assignment
      operator.
   4. unique_ptr is a template.
+  5. unique_ptr can not be copied, only moved
+     example1 - products.push_back(p); - wrong
+               products.push_back(move(p)); - correct
+     exmaple2 - card->addProduct(new Product("Laptop", 1500)); - wrong
+                card->addProduct(make_unique<Product>("Laptop", 1500)); - correct
+     example3 - vector<unique_ptr<Product>> getProducts() {
+                   return products; //copy not allowed
+                }
+                vector<unique_ptr<Product>>& getProducts() {
+                  return products; //return reference
+                }
+     example4 - ShoppingCart *cart = new ShoppingCart(); //unnecessary
+                ShoppingCart cart; //simple
 */
 
 #include<iostream>
